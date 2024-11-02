@@ -97,11 +97,12 @@ function calculateCosts() {
   let total = preTaxTotal + taxes;
 
   if (validateAllInputs() == true) {
-    document.getElementById("price-value").innerHTML = preTaxTotal.toFixed(2);
+    document.getElementById("price-value").innerHTML =
+      "$" + preTaxTotal.toFixed(2);
 
-    document.getElementById("taxes-value").innerHTML = taxes.toFixed(2);
+    document.getElementById("taxes-value").innerHTML = "$" + taxes.toFixed(2);
 
-    document.getElementById("total-value").innerHTML = total.toFixed(2);
+    document.getElementById("total-value").innerHTML = "$" + total.toFixed(2);
 
     document.getElementById("price-result").classList.remove("display-none");
   }
